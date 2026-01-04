@@ -95,3 +95,94 @@ nav a {
   font-size:12px;
   color:#9b9595;
  }
+
+ @media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  nav {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  nav a {
+    margin: 6px 8px;
+    font-size: 14px;
+  }
+
+  .navbar input {
+    width: 100%;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .icons span {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .h1 {
+    font-size: 22px;
+  }
+}
