@@ -1,0 +1,97 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background:white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin: 30px 0 20px;
+  letter-spacing: 0.3px;
+
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family:'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight:600;
+  letter-spacing: 0.5px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #ff3f6c;
+  margin-right: 30px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar input {
+  margin-left: auto;
+  padding: 8px;
+  width: 250px;
+}
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight:600;
+  color: #000;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  font-family:'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card p {
+  color: #6b6b6b;
+  font-size: 14px;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+ .p {
+  font-weight:400;
+  font-size:12px;
+  color:#9b9595;
+ }
